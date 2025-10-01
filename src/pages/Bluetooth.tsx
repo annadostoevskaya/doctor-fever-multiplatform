@@ -7,7 +7,7 @@ export default function Bluetooth() {
         </p>
         <div className='flex items-center justify-center my-[10px]'>
           <svg className='w-[94px] h-[180px]'>
-            <use xlinkHref='#icon-b_bluetooth' />
+            <use xlinkHref='#icon-bt' />
           </svg>
         </div>
         <button className='bg-gray-300 text-blue-500 px-8 py-2 rounded-full hover:bg-blue-600 hover:text-white transition font-sfpro cursor-pointer'>

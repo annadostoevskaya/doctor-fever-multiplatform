@@ -3,13 +3,17 @@
 // import { invoke } from "@tauri-apps/api/core";
 
 import { HashRouter as Router, Routes, Route } from "react-router-dom"
-import Bluetooth from "./pages/Bluetooth";
+import { Bluetooth, AvailableDevices, HumanBodyTemperature, Pager, Main } from "./pages";
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Bluetooth />}></Route>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/available-devices" element={<AvailableDevices />}></Route>
+        <Route path="/bluetooth" element={<Bluetooth />}></Route>
+        <Route path="/pager" element={<Pager />}></Route>
+        <Route path="/human-body-temperature" element={<HumanBodyTemperature />}></Route>
       </Routes>
     </Router>
   );
