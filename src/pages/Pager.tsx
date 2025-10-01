@@ -37,7 +37,7 @@ export default function Pager() {
           >
             <div className=''>
               <svg className='w-[10px] h-[16px]'>
-                <use xlinkHref='#icon-back_arrow' />
+                <use xlinkHref='#icon-arrow' />
               </svg>
             </div>
           </Link>

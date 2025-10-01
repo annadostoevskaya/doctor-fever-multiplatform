@@ -40,13 +40,13 @@ export default function AvailableDevices() {
               {/* Bluetooth */}
               <div>
                 <svg className='w-[19px] h-[25px]'>
-                  <use xlinkHref='#icon-s_bluetooth' />
+                  <use xlinkHref='#icon-small_bt' />
                 </svg>
                 {/* Стрелка */}
               </div>
               <div>
                 <svg className='w-[8px] h-[22px]'>
-                  <use xlinkHref='#icon-av_arrow' />
+                  <use xlinkHref='#icon-small_arrow' />
                 </svg>
               </div>
             </div>
@@ -66,13 +66,13 @@ export default function AvailableDevices() {
               {/* Bluetooth */}
               <div>
                 <svg className='w-[19px] h-[25px]'>
-                  <use xlinkHref='#icon-s_bluetooth' />
+                  <use xlinkHref='#icon-small_bt' />
                 </svg>
                 {/* Стрелка */}
               </div>
               <div>
                 <svg className='w-[8px] h-[22px]'>
-                  <use xlinkHref='#icon-av_arrow' />
+                  <use xlinkHref='#icon-small_arrow' />
                 </svg>
               </div>
             </div>
@@ -92,13 +92,13 @@ export default function AvailableDevices() {
               {/* Bluetooth */}
               <div>
                 <svg className='w-[19px] h-[25px]'>
-                  <use xlinkHref='#icon-s_bluetooth' />
+                  <use xlinkHref='#icon-small_bt' />
                 </svg>
                 {/* Стрелка */}
               </div>
               <div>
                 <svg className='w-[8px] h-[22px]'>
-                  <use xlinkHref='#icon-av_arrow' />
+                  <use xlinkHref='#icon-small_arrow' />
                 </svg>
               </div>
             </div>
