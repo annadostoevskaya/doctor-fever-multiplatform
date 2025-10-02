@@ -73,13 +73,13 @@ export default function Temperature() {
     result === null ? "#0088FF" : result > 50 ? "#00E676" : "#FF1744";
 
   return (
-    <div className="flex justify-center min-h-screen bg-gray-100">
-      <div className="w-96 shadow-lg p-4 bg-[#F2F2F7]">
+    <div className="flex justify-center min-h-screen">
+      <div className="w-full p-4">
         <div className="flex justify-between items-center mb-8">
           <h1 className="font-sfpro font-bold text-[28px]">Body Temperature</h1>
 
           <Link
-            to="/"
+            to="/main"
             className="bg-white/50 backdrop-blur-3xl border border-white/50 rounded-full p-2 shadow-xl 
                      hover:scale-105 hover:shadow-2xl hover:bg-white/40 
                      active:scale-95 active:shadow-none transition-all duration-300 cursor-pointer w-[48px] h-[48px] flex justify-center items-center"
@@ -91,9 +91,8 @@ export default function Temperature() {
             </div>
           </Link>
         </div>
-
         <div
-          className="rounded-[34px] w-[350px] h-[350px] shadow-lg p-10 flex justify-center items-center
+          className="rounded-[34px] w-full h-[350px] shadow-lg p-10 flex justify-center items-center
                          bg-[rgba(250,250,250,0.7)] backdrop-blur-3xl border border-white/80 mb-[10px] "
         >
           <div
@@ -149,7 +148,6 @@ export default function Temperature() {
                 </linearGradient>
               </defs>
             </svg>
-
             {/* отдельный крутящийся спиннер */}
             {loading && (
               <div
@@ -175,26 +173,23 @@ export default function Temperature() {
             )}
           </div>
         </div>
-
         <div
-          className="w-[350px] h-[265px] rounded-[26px] p-6 shadow-lg bg-[rgba(250,250,250,0.7)]
-                backdrop-blur-3xl border border-white/80"
+          className="w-full h-[265px] rounded-[26px] p-6 shadow-lg bg-[rgba(250,250,250,0.7)] backdrop-blur-3xl border border-white/80"
         >
-          <div className="mb-2">
+          <div>
             <span className="font-sfpro text-[22px]">Usage</span>
+            <p className="font-sfpro text-[17px] leading-[22px]">
+              1. Press the Start button to begin the measurement.
+              <br />
+              2. You will have {COUNTDOWN_TIME} seconds to place the sensor close
+              to your forehead.
+              <br />
+              3. Hold it steady until the measurement is complete.
+              <br />
+              4. After a few moments, your temperature result will appear on the
+              screen.
+            </p>
           </div>
-
-          <p className="font-sfpro text-[17px] leading-[22px]">
-            1. Press the Start button to begin the measurement.
-            <br />
-            2. You will have {COUNTDOWN_TIME} seconds to place the sensor close
-            to your forehead.
-            <br />
-            3. Hold it steady until the measurement is complete.
-            <br />
-            4. After a few moments, your temperature result will appear on the
-            screen.
-          </p>
         </div>
       </div>
     </div>

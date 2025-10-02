@@ -25,27 +25,24 @@ export default function Pager() {
 
   return (
     <div className='flex justify-center min-h-screen bg-gray-100'>
-      <div className='w-96 shadow-lg p-[18px] bg-[#F2F2F7]'>
-        {/* Заголовок + кнопка */}
+      <div className='w-full p-4'>
         <div className='flex justify-between items-center mb-[30px]'>
           <h1 className='font-sfpro font-bold text-[28px]'>Pager</h1>
           <Link
-            to='/'
+            to='/main'
             className='bg-white/50 backdrop-blur-3xl border border-white/50 rounded-full p-2 shadow-xl 
                      hover:scale-105 hover:shadow-2xl hover:bg-white/40 
                      active:scale-95 active:shadow-none transition-all duration-300 cursor-pointer w-[48px] h-[48px] flex justify-center items-center'
           >
-            <div className=''>
+            <div>
               <svg className='w-[10px] h-[16px]'>
                 <use xlinkHref='#icon-arrow' />
               </svg>
             </div>
           </Link>
         </div>
-
-        {/* Контейнер сообщений */}
         <div
-          className='rounded-[26px] w-[350px] h-[660px] shadow-lg p-[10px] 
+          className='rounded-[26px] w-full h-[660px] shadow-lg p-[10px] 
                 bg-[#fff] backdrop-blur-3xl border border-white/80 mb-[10px] 
                 overflow-y-scroll'
         >
@@ -61,8 +58,6 @@ export default function Pager() {
             </div>
           ))}
         </div>
-
-        {/* Поле ввода + кнопка */}
         <div className='flex items-center bg-[#78788029] rounded-[100px] p-[11px]'>
           <span className='font-bold text-gray-500 mr-2'>ID98:</span>
           <input
